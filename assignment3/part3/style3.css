@@ -30,15 +30,25 @@ img {
   gap: 20px
 }
 
+article {
+  flex: 3;
+}
+aside {
+  flex: 1;  
+}                     
 nav {
   background-color: black;
   padding: 0.5em;
+  position: sticky;              
 }
+
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
