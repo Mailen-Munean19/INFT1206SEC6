@@ -25,6 +25,9 @@ img {
 .grid {
   margin: 0 auto;
   max-width: 980px;
+
+  display: flex;                  /* Create flexible two-column layout */
+  gap: 20px
 }
 
 nav {
