@@ -13,7 +13,7 @@ h2{
   font-family: 'Roboto Slab', serif;
 }
 
-/* General setup */
+
 
 * {
   box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
   max-width: 1400px;
 }
 
-/* Layout */
+
 
 main {
   display: grid;
@@ -39,7 +39,7 @@ main {
   padding: 20px 0;
 }
 
-/* Header and footer */
+
 
 header {
   border-bottom: 5px solid #33773e;
@@ -53,7 +53,7 @@ footer p {
   text-align: center;
 }
 
-/* Solution: General text styling */
+
 
 h1 {
   font-size: 3rem;
@@ -77,7 +77,7 @@ li {
   letter-spacing: 0.5px;
 }
 
-/* Solution: Link styling */
+
 
 a {
   outline: none;
@@ -100,7 +100,7 @@ a:hover {
   color: #33773e;
 }
 
-/* Solution: List styling */
+
 
 ul,
 ol {
@@ -115,5 +115,37 @@ ol {
   list-style-type: lower-roman;
 }
 
-/* Solution: Navigation menu styling */
 
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+nav li a {
+  font-family: "Bevan", serif;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3.5;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid #33773e;
+}
+
+nav li a:focus,
+nav li a:hover {
+  color: white;
+  background: #33773e;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
+}
