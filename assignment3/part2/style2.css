@@ -15,3 +15,105 @@ h2{
 
 /* General setup */
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #222;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* Header and footer */
+
+header {
+  border-bottom: 5px solid #33773e;
+}
+
+footer {
+  border-top: 5px solid #33773e;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Solution: General text styling */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+section h2 + p {
+  text-indent: 2rem;
+}
+
+p,
+li {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Solution: Link styling */
+
+a {
+  outline: none;
+}
+
+a[href*="http"] {
+  padding-right: 16px;
+  background: url("external-link-52.png") no-repeat right center;
+  background-size: 14px 14px;
+}
+
+a:link,
+a:visited {
+  color: #33773e;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #33773e;
+}
+
+/* Solution: List styling */
+
+ul,
+ol {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+/* Solution: Navigation menu styling */
+
