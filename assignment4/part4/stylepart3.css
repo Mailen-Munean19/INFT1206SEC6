@@ -1,13 +1,23 @@
-body {
+html, body {
   margin: 0;
-  overflow: hidden;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+  height: 100%;
 }
 
 h1 {
+  text-align: center;
+}
+
+p {
   position: absolute;
-  color: white;
-  left: 10px;
-  top: 10px;
+  margin: 0;
+  top: 35px;
+  right: 5px;
+  color: #aaaaaa;
 }
 
 canvas {
