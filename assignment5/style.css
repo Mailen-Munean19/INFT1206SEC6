@@ -6,7 +6,6 @@ html, body {
 }
 
 html {
-  font-size: 10px;
   background-color: #dde;
 }
 
@@ -14,33 +13,35 @@ body {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
+  color: #222;
 }
 
 /* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
+
+
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #2a2a2a;
 }
 
-font[size="7"] {
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
 
@@ -52,7 +53,7 @@ p, li, table {
 /* || header layout */
 
 nav, article, footer, .secondary {
-  background-color: green;
+  background-color: #ffffff;
 }
 
 article, footer, .secondary {
@@ -64,11 +65,13 @@ article {
 }
 
 nav {
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #333; 
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
+}
 }
 
 nav ul {
@@ -85,11 +88,8 @@ nav li {
 }
 
 nav a {
-  display: inline-block;
-  font-size: 2rem;
-  text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 nav .search {
@@ -112,8 +112,8 @@ nav .search {
 .search input[type="submit"] {
   flex: 1;
   margin-left: 1rem;
-  background: #333;
   border: 0;
+  background: #333;
   color: white;
 }
 
@@ -247,4 +247,9 @@ audio {
 
 .comment-container li p:nth-child(2) {
   flex: 5;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
 }
